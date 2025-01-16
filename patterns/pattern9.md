@@ -11,20 +11,20 @@ Output:
 
 ## Solution in c++:
 
-void numberCrown(int n) {
-    for(int i=1; i<=n; i++){
-        //number
-        for(int j=1; j<=i; j++){
-            cout<< j <<" ";
+    void numberCrown(int n) {
+        for(int i=1; i<=n; i++){
+            //number
+            for(int j=1; j<=i; j++){
+                cout<< j <<" ";
+            }
+            //space
+            for(int k=1; k<=2*(n-i); k++){
+                cout<< " ";
+            }
+            //number
+            for(int j=i; j>=1; j--){
+                cout<< j <<" ";
+            }
+            cout<< endl;
         }
-        //space
-        for(int k=1; k<=2*(n-i); k++){
-            cout<< " ";
-        }
-        //number
-        for(int j=i; j>=1; j--){
-            cout<< j <<" ";
-        }
-        cout<< endl;
     }
-}
